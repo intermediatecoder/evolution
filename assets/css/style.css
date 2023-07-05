@@ -220,7 +220,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   visibility: hidden;
   pointer-events: none;
   z-index: 10;
-  animation: popup 1s ease-in-out 5s forwards;
+  /* animation: popup 1s ease-in-out 0s forwards; */
 }
 
 @keyframes popup {
@@ -281,7 +281,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   border-radius: var(--border-radius-sm);
 }
 
-.modal-close-btn:hover { opacity: 0.9; }
+.modal-close-btn:hover { opacity:10s; }
 
 .modal-close-btn ion-icon { --ionicon-stroke-width: 70px; }
 
@@ -433,7 +433,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .desktop-navigation-menu { display: none; }
 
 .header-main {
-  padding: 20px 0;
+  padding: 2px 0;
   border-bottom: 1px solid var(--cultured);
 }
 
@@ -1779,7 +1779,7 @@ footer {
 
   .header-alert-news b { font-weight: var(--weight-500); }
 
-  .header-main { padding: 25px 0; }
+  .header-main { padding: 5px 0; }
 
   .mobile-bottom-navigation {
     border-top-left-radius: var(--border-radius-md);

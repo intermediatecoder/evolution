@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .buyer-container {
+          display: flex;
+          align-items: center;
+        }
+      
+        .buyer-image {
+          float: left;
+          width: 500px; /* Adjust the width as needed */
+          margin-right: 20px; /* Add some spacing between the image and description */
+        }
+      
+        .buyer-description {
+          float: left;
+          width: calc(100% - 220px); /* Adjust the width to leave space for the image and spacing */
+        }
+      
+        .buy-button {
+          background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          cursor: pointer;
+          border-radius: 4px;
+        }
+       
+  .my-form {
+    max-width: 500px; /* Adjust the form width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .submit-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+
+      </style>
+      
+      
+</head>
+<body>
+    <div class="buyer-container">
+        <img src="./assets/images/products/clothes-1.jpg" alt="Buyer Image" class="buyer-image">
+        <div class="buyer-description">
+          <h2 style="margin-top: 0px;">Buyer Name</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac eros id metus facilisis convallis. Nullam viverra dolor non finibus accumsan. Aliquam sit amet lectus sed ligula consequat ultricies. Duis a lectus consectetur, vehicula nisl in, eleifend est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin ultrices aliquet sem, vitae interdum leo posuere eget. Quisque mollis ipsum mi, in finibus diam fringilla eu. Proin in erat ac nisi vestibulum auctor.</p>
+          <form class="my-form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="mobile">Mobile No:</label>
+              <input type="tel" id="mobile" name="mobile" required>
+            </div>
+            <div class="form-group">
+              <label for="address">Address:</label>
+              <textarea id="address" name="address" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="payment">Payment Method:</label>
+              <select id="payment" name="payment" required>
+                <option value="">Select Payment Method</option>
+                <option value="credit-card">Cash On Delivery</option>
+                
+              </select>
+            </div>
+           <a href="success.html"> <button type="button" class="submit-button">Buy Now</button></a>
+          </form>
+          
+          
+          
+        </div>
+      </div>
+      
+
+</body>
+</html>
